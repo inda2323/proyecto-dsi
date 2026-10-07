@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+
+        header {
+            background-color: #1976d2;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h2 {
+            margin: 0;
+        }
+
+        .cerrar {
+            background-color: #d32f2f;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .contenedor {
+            padding: 30px;
+        }
+
+        .tarjetas {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tarjeta {
+            background-color: white;
+            padding: 25px;
+            width: 200px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px #ddd;
+        }
+
+        .tarjeta h3 {
+            color: #1976d2;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: #1976d2;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h2>Panel de Administrador</h2>
+
+        <a href="index.html" class="cerrar">Cerrar sesión</a>
+
+    </header>
+
+    <div class="contenedor">
+
+        <h1>Bienvenido, Administrador</h1>
+
+        <p>Desde este panel puedes administrar el sistema.</p>
+
+        <div class="tarjetas">
+
+            <div class="tarjeta">
+                <h3>Médicos</h3>
+                <p>Administrar médicos registrados.</p>
+                <a href="#" class="boton">Ver médicos</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Pacientes</h3>
+                <p>Consultar pacientes registrados.</p>
+                <a href="#" class="boton">Ver pacientes</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Citas</h3>
+                <p>Consultar y administrar citas.</p>
+                <a href="#" class="boton">Ver citas</a>
+            </div>
+
+            <div class="tarjeta">
+                <h3>Usuarios</h3>
+                <p>Administrar usuarios del sistema.</p>
+                <a href="#" class="boton">Ver usuarios</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

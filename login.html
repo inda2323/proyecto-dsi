@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+
+        .login {
+            width: 350px;
+            margin: 100px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1976d2;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 12px;
+            background-color: #1976d2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #125aa0;
+        }
+
+        .volver {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .volver a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login">
+
+        <h1>Iniciar Sesión</h1>
+
+        <form onsubmit="iniciarSesion(event)">
+
+            <label>Usuario:</label>
+            <input type="text" id="usuario" required>
+
+            <label>Contraseña:</label>
+            <input type="password" id="password" required>
+
+            <button type="submit">Ingresar</button>
+
+        </form>
+
+        <div class="volver">
+            <a href="index.html">Volver al inicio</a>
+        </div>
+
+    </div>
+
+    <script>
+        function iniciarSesion(event) {
+
+            event.preventDefault();
+
+            let usuario = document.getElementById("usuario").value;
+            let password = document.getElementById("password").value;
+
+            if (usuario === "admin" && password === "1234") {
+                window.location.href = "admin.html";
+            } else {
+                alert("Usuario o contraseña incorrectos");
+            }
+        }
+    </script>
+
+</body>
+</html>
